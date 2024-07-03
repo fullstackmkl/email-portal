@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Notification System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to E-Blast</h1>
+  </header>
+  <section id="loginSection">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button onclick="login()">Login</button>
+    <p id="loginError" class="error-message"></p>
+  </section>
+  <section id="jobSection" style="display: none;">
+    <h2>Email Jobs</h2>
+    <div id="jobTableContainer"></div>
+    <button onclick="runEmailJobs()">Run Email Jobs</button>
+  </section>
+  <section id="emailSection" style="display: none;">
+    <h2>Generated Emails</h2>
+    <div id="emailDrafts"></div>
+    <button id="sendAllEmailsButton" onclick="sendAllEmails()">Send All Emails</button>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
