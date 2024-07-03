@@ -4,8 +4,8 @@ let userData = []; // Array to store the user data
 let currentUser = null; // Store the current user information
 
 // Example file paths for the Excel files
-const emailJobsFilePath = 'Z:\OpReef\email jobs.xlsx';
-const userCredentialsFilePath = 'Z:\OpReef\credentials.xlsx';
+const emailJobsFilePath = 'Z:\\OpReef\\email jobs.xlsx';
+const userCredentialsFilePath = 'Z:\\OpReef\\credentials.xlsx';
 
 // Function to login the user
 function login() {
